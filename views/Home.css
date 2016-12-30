@@ -1,0 +1,12 @@
+/**
+ * React App SDK (https://github.com/kriasoft/react-app)
+ *
+ * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+
+
+docker run --name gitlab -d     --link gitlab-postgresql:postgresql --link gitlab-redis:redisio     --publish 10022:22 --publish 10080:80     --env 'GITLAB_HOST=106.75.192.252'     --env 'GITLAB_PORT=10080' --env 'GITLAB_SSH_PORT=10022'     --env 'GITLAB_SECRETS_DB_KEY_BASE=ZAHTp3Ui1wo9QgShLC2c7awUm072fZhHtKDqmvBvLTm4DYX7ayorJsQPt0HubEMp'     --env 'GITLAB_SECRETS_SECRET_KEY_BASE=IK7VDymlKqM9ump5sjQTrgcQcltMF2ilTFNvezos6hbk05p5BzSuyz9W70jnASwM'     --env 'GITLAB_SECRETS_OTP_KEY_BASE=NFPozMcjOJk9k0yYR0lMRhDLkgiBrry3MxxAqwDlX4fnaNZ5Pe5uyb8VZd5zuGnh'     --env 'SMTP_USER=chufan617@gmail.com'     --env 'SMTP_PASS=lost?think>do123'  --env 'GITLAB_SIGNUP_ENABLED=true'   --volume /data/docker/gitlab/gitlab:/home/git/data     sameersbn/gitlab:8.11.4
